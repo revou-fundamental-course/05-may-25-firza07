@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom styles */
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+/* Navigation styles */
+nav {
+  transition: all 0.3s ease;
+}
+
+/* Banner styles */
+#banner {
+  padding-top: 5rem;
+}
+
+/* Package card hover effect */
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+#contact-form input,
+#contact-form select {
+  transition: all 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form select:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #banner {
+    padding-top: 4rem;
+  }
+  
+  .max-w-7xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
